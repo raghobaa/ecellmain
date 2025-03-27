@@ -12,8 +12,8 @@ const Navbar: React.FC<NavbarProps> = ({ isMenuOpen, setIsMenuOpen }) => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <Scanner className="h-8 w-8 text-white" />
-            <span className="ml-2 text-xl font-bold text-white">E-Cell</span>
+            {/* <Scanner className="h-8 w-8 text-white" /> */}
+            <span className="ml-2 text-xl font-bold text-white">ECell RRCE</span>
           </div>
 
           {/* Desktop Menu */}
@@ -21,6 +21,7 @@ const Navbar: React.FC<NavbarProps> = ({ isMenuOpen, setIsMenuOpen }) => {
             <a href="#about" className="text-white hover:text-blue-300 transition">About Us</a>
             <a href="#events" className="text-white hover:text-blue-300 transition">Events</a>
             <a href="#team" className="text-white hover:text-blue-300 transition">Team</a>
+            <a href="#services" className="text-white hover:text-blue-300 transition">Services</a>
             <a href="#contact" className="text-white hover:text-blue-300 transition">Contact</a>
           </div>
 
@@ -57,6 +58,13 @@ const Navbar: React.FC<NavbarProps> = ({ isMenuOpen, setIsMenuOpen }) => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Team
+              </a>
+              <a
+                href="#services"
+                className="block px-3 py-2 text-white hover:bg-blue-800 rounded-md"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Services
               </a>
               <a
                 href="#contact"
